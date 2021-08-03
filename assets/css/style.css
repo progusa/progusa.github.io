@@ -227,3 +227,50 @@ figure img.dennis-ritchie{
         margin-bottom: 10px;
     }
 }
+
+/* Style Tool Calculator */
+.container.grid-calculator{
+    background-color: #00d2ff;
+    height: 65vh;
+    margin-bottom: 17px;
+}
+
+.container.main-calculator{
+    padding-top: 10px;
+}
+
+.display-cs{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.value-cs{
+    
+}
+
+.btn-operator .btn-custom-cs{
+    width: 100vh;
+    padding: 7px;
+    font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+    .container.grid-calculator{
+        height: 54vh;
+    }
+    .btn-operator .btn-custom-cs{
+        padding: 0px;
+        font-size: medium;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .container.grid-calculator{
+        height: 55vh;
+    }
+    .btn-operator .btn-custom-cs{
+        padding: 0px;
+        font-size: smaller;
+    }
+}
