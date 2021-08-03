@@ -1,14 +1,37 @@
+/*
+Palette
+Purple
+#5E05C2
+Red Violet
+#D00A88
+Thunder
+#1E151C
+Spanish Green
+#83998A
+*/
+
+
 /*============= Init Text ================ */
 body {
+    background-color: #fafafa;
     font-family: 'Roboto Mono', monospace;
 }
 
 /*=====================================*/
 /* navbar style */
 /*=====================================*/
+nav.navbar{
+    background-color: #5E05C2;
+}
+
 .navbar-brand {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: bold;
+    margin-right: 0px;
+}
+
+.font-effect-anaglyph{
+    margin-right: 5px;
 }
 
 .navbar-collapse {
@@ -90,7 +113,7 @@ body {
 /*======= Cover =========*/
 .cover {
     color: #fff;
-    background-image: url("/assets/img/bg_1.jpeg");
+    background-image: url("../img/background_1.jpeg");
     height: 100vh;
 }
 
@@ -101,4 +124,106 @@ body {
 
 .mask {
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*============ Index Tool Page Style ===============*/
+.menuTools{
+    padding: 25px 25px;
+}
+
+.card{
+    margin: 0;
+}
+
+/*========== Custome Scroolbar ============== */
+/* Custom Scrollbar using CSS */
+/* scrollbar width */
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* scrollbar track */
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* scrollbar handle */
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #00d2ff;
+  background-image: linear-gradient(to top, #D00A88 0%, #5E05C2 100%);
+}
+
+/* ===== Button =======*/
+.btn.btn-primary {
+    color: #fff;
+    background-color: #D00A88;
+    border-color: #D00A88;
+  }
+  .btn.btn-primary.focus,
+  .btn.btn-primary:focus {
+    color: #fff;
+    background-color: #83998A;
+    border-color: #83998A;
+    outline: none;
+    box-shadow: none;
+  }
+  .btn.btn-primary:hover {
+    color: #fff;
+    background-color: #83998A;
+    border-color: #83998A;
+    outline: none;
+    box-shadow: none;
+  }
+  .btn.btn-primary.active,
+  .btn.btn-primary:active {
+    color: #fff;
+    background-color: #83998A;
+    border-color: #83998A;
+    outline: none;
+  }
+  .btn.btn-primary.active.focus,
+  .btn.btn-primary.active:focus,
+  .btn.btn-primary.active:hover,
+  .btn.btn-primary:active.focus,
+  .btn.btn-primary:active:focus,
+  .btn.btn-primary:active:hover {
+    color: #fff;
+    background-color: #83998A;
+    border-color: #83998A;
+    outline: none;
+    box-shadow: none;
+  }
+
+/*=========== Footer =========*/
+footer{
+    background-color: #D00A88;
+}
+
+footer .cc{
+    color: rgb(255, 255, 255);
+    background-color: #1E151C;
+}
+
+/* STYLE Learn */
+.cmain article.container{
+    border: 0.5px solid rgba(0, 0, 0, 0.103);
+    padding: 17px 25px;
+    background-color: white;
+}
+.tahap-belajar-c{
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #D00A88;
+    color: white;
+}
+
+figure img.dennis-ritchie{
+    height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .leveling{
+        margin-bottom: 10px;
+    }
 }

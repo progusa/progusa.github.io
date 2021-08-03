@@ -1,0 +1,5 @@
+[config]
+BROWSER = chrome
+BROWSER_PATH = C:\Program Files\WebDriver\chromedriver.exe
+NAME = person
+PAGE = https://web.whatsapp.com/

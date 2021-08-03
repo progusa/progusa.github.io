@@ -1,0 +1,5 @@
+[config]
+BROWSER = chrome
+BROWSER_PATH = C:\Users\ASUS\AppData\Local\Google\Chrome\User Data\Default
+NAME = person
+PAGE = https://web.whatsapp.com/
