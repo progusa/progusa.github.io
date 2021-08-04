@@ -229,10 +229,15 @@ figure img.dennis-ritchie{
 }
 
 /* Style Tool Calculator */
+.Calculator .container.layout{
+    height: 100vh;
+}
+
 .container.grid-calculator{
     background-color: #00d2ff;
-    height: 65vh;
+    width: 45vh;
     margin-bottom: 17px;
+    padding-bottom: 17px;
 }
 
 .container.main-calculator{
@@ -244,33 +249,30 @@ figure img.dennis-ritchie{
     padding: 10px;
 }
 
+.display-temp-cs{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    font-size: small;
+}
 .value-cs{
     
 }
 
 .btn-operator .btn-custom-cs{
+    background-color: #D00A88;
+    color: #fff;
+    border: 1px solid #1E151C;
     width: 100vh;
     padding: 7px;
     font-size: medium;
 }
 
-@media screen and (max-width: 768px) {
-    .container.grid-calculator{
-        height: 54vh;
-    }
-    .btn-operator .btn-custom-cs{
-        padding: 0px;
-        font-size: medium;
-    }
+.btn-custom-cs:hover{
+    background-color: #83998A;
 }
 
-
 @media screen and (max-width: 425px) {
-    .container.grid-calculator{
-        height: 55vh;
-    }
     .btn-operator .btn-custom-cs{
-        padding: 0px;
         font-size: smaller;
     }
 }
