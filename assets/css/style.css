@@ -107,6 +107,10 @@ nav.navbar{
     /* border: 2px solid black; */
 }
 
+.active a{
+    color: #fff!important;
+}
+
 /* .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 } */
@@ -218,6 +222,10 @@ footer .cc{
     color: white;
 }
 
+.link-light:hover{
+    color: #1E151C;
+}
+
 figure img.dennis-ritchie{
     height: 350px;
 }
@@ -231,6 +239,10 @@ figure img.dennis-ritchie{
 /* Style Tool Calculator */
 .Calculator .container.layout{
     height: 100vh;
+}
+
+.container.title-cs{
+    padding-bottom: 17px;
 }
 
 .container.grid-calculator{
