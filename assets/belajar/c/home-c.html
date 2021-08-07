@@ -8,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
     <!-- Link Font-Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@600&display=swap&effect=anaglyph" rel="stylesheet">
@@ -22,11 +21,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Link Custom Css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- Link Icon -->
-    <link rel="icon" type="image/ico" href="./assets/logo_icon.ico">
-    </link>
+    <link rel="icon" type="image/ico" href="../../img/logo_icon.ico" />
 
     <title>Programming Nusantara</title>
 </head>
@@ -36,13 +34,16 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
             <div class="font-effect-anaglyph">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Programming Nusantara</a>
+                <a class="navbar-brand" href="../../../index.html"><img src="../../img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"> Programming Nusantara</a>
             </div>
             <button id="toggler" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder()">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fa fa-bars"></i>
             </button>
+            <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarScroll" aria-controls="navbarScroll"
+        aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"> <i class="fas fa-bars"></i> </span> </button> -->
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll multi-level" role="menu" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
@@ -122,7 +123,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Learn
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -160,10 +161,18 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tool.html">
-                            Tools
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Karya
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/assets/karya/tools/index.html">Alat</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Games</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
@@ -180,156 +189,95 @@
     <!-- End Navbar-->
 
     <!-- Content -->
-    <section id="cover">
-        <div class="cover bg-image d-flex justify-content-center align-items-center">
-            <div class="mask">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <h1 class="text-center">Enjoy Your Free Code Everyone
-                        <i class="far fa-smile"></i>
-                    </h1>
+    <section class="cmain">
+        <article class="container">
+            <header>
+                <h1>Belajar Bahasa C</h1>
+                <div class="byline">
+                    <address class="author">By <a rel="author" href="#">Arsal Fadilah</a> on <time pubdate
+                            datetime="2021-08-03" title="03 August 2021">03/08/2021</time></address>
+
                 </div>
+            </header>
+            <!-- video belum ada : templatenya udah ada -->
+            <!-- <div class="c-vid-content text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ipIKT2TJ_oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+
+            <div class="c-content">
+                <p>Hai, sobat PN!. Kali ini kita akan belajar tentang bahasa pemrograman C nich. Sobat PN tahu ngga? Bahasa C ini dijuluki sebagai "bapak" dari bahasa pemrograman yang lainnya lho. Kenapa? karena bahasa C banyak mengingspirasi bahasa pemrograman
+                    seperti Java, Python, C++, C#, PHP dan sebagainya.
+                </p>
+                <p>Tak kenal maka tak sayang. Sobat PN perkenalkan penemu dari bahasa C ialah Dennis Rithcie.</p>
+                <figure class="text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dennis_Ritchie_2011.jpg/466px-Dennis_Ritchie_2011.jpg" class="img-fluid img-thumbnail mx-auto d-block dennis-ritchie" alt="Dennis Ritchie">
+                    <figcaption class="figure-caption text-center">Dennis_Ritchie_2011</figcaption>
+                </figure>
+                <p>Yups beliau ini sebenarnya sedang mengembangkan bahasa B sekitar pada tahun 1970-an di Bell Telephone Laboratories Inc. (sekarang adalah AT&T Bell Laboratories). Namun, eh ternyata beliau malah bikin bahasa baru, sungguh jenius. Bahasa
+                    C pertama kali digunakan pada komputer Digital Equipment Corporation PDP-11 yang menggunakan sistem operasi UNIX.</p>
+                <p>Oke, balik lagi ke topik, bahasa C dibacanya "si" adalah bahasa pemrograman yang memiliki sifat prosedural programming. Apa itu prosedural programming? desain pemrograman dengan pendekatan “Top Down”. Ih, kok banyak betul istilah nya
+                    <i class="far fa-frown-open"></i>. Tenang, mimin jelaskan. Jadi top down itu adalah tugas-tugas kompleks dipecah menjadi bagian yang lebih kecil, sampai sub-tugas tersebut mudah diimplementasikan.
+                </p>
+                <p>Ah, tidak apa kalau kalian saat ini belum paham mengenai bahasa C. Yang penting kalian punya semangat untuk belajar terus itu udah cukup memenuhi syarat menjadi programmer kok sobat PN, hehehe. Yuk cus aja langsung belajar bahasa C nya
+                    dari awal.</p>
+                <h2 class="text-center">Ayo Mulai!</h2>
+                <div class="alert alert-warning" role="alert">
+                    Ikuti secara bertahap yah sobat PN, agar kalian tidak bingung <i class="far fa-smile"> !</i>
+                </div>
+                <div class="tahap-belajar-c shadow">
+                    <div class="container">
+                        <div class="row">
+                            <div class="leveling col-sm-6 col-md-4 shadow-5-strong">
+                                <h3 class="text-center">Basic</h3>
+                                <ul>
+                                    <li><a class="link-light" href="#">Syntax</a></li>
+                                    <li><a class="link-light" href="#">Output Basic</a></li>
+                                    <li><a class="link-light" href="#">Data Type</a></li>
+                                    <li><a class="link-light" href="#">Input</a></li>
+                                    <li><a class="link-light" href="#">Operator</a></li>
+                                    <li><a class="link-light" href="#">Condition</a></li>
+                                    <li><a class="link-light" href="#">Loop</a></li>
+                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
+                                </ul>
+                            </div>
+                            <div class="leveling col-sm-6 col-md-4 shadow-5-strong">
+                                <h3 class="text-center">Intermediate</h3>
+                                <ul>
+                                    <li><a class="link-light" href="#">Complete Output</a></li>
+                                    <li><a class="link-light" href="#">Collection Data Type</a></li>
+                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
+                                </ul>
+                            </div>
+                            <div class="leveling col-sm col-md-4 shadow-5-strong">
+                                <h3 class="text-center">Profesional</h3>
+                                <ul>
+                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="leveling col shadow-5-strong">
+                                <h3 class="text-center">Master</h3>
+                                <ul>
+                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    Ayo kenapa masih mikir? buruan klik materi-materinya biar jadi professional dan mendapatkan banyak cuan <i class="far fa-grin-wink"></i></i>
+                </div>
+                <p></p>
             </div>
-        </div>
+            <p>Salam hormat,</p>
+            <p>Programming Nusantara</p>
+        </article>
     </section>
     <!-- End Content -->
 
     <!-- Footer -->
     <footer class="text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <!-- Twitter -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
-
-                <!-- Google -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button">
-                    <i class="fab fa-google"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- Linkedin -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <!-- Github -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button">
-                    <i class="fab fa-github"></i>
-                </a>
-            </section>
-            <!-- End Section: Social media -->
-
-            <!-- Section: Form -->
-            <section class="">
-                <!-- Form -->
-                <form action="assets/php/insert.php" method="POST">
-                    <!--Grid row-->
-                    <div class="row d-flex justify-content-center">
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Sign up for our newsletter</strong>
-                            </p>
-                        </div>
-                        <!-- End Grid column-->
-                        <!-- Input -->
-                            <!--Grid column-->
-                            <div class="col-md-5 col-12">
-                                <!-- Email input -->
-                                <div class="form-outline form-white mb-4">
-                                    <input type="email" name="email" class="form-control" required>
-                                    <label class="form-label" for="form5Example2">Email address</label>
-                                </div>
-                            </div>
-                            <!-- End Grid column-->
-                            <!--Grid column-->
-                            <div class="col-auto">
-                                <!-- Submit button -->
-                                <input type="submit" name="submitmailonly" value="Submit" placeholder="Submit" class="btn btn-outline-light mb-4"> 
-                            </div>
-                            <!--End Grid column-->
-                        <!-- End Input -->
-                    </div>
-                    <!--End Grid row-->
-                </form>
-                <!-- End Form -->
-            </section>
-            <!-- End Section: Form -->
-
-            <!-- Section: Text -->
-            <section class="mb-4">
-                <p>
-                    Programming Nusantara (PROGUSA) adalah salah satu website belajar bahasa
-                    pemrograman di Indonesia. PROGUSA melakukan pembelajaran dari dasar hingga
-                    menjadi profesional. PROGUSA memberikan materi-materi dalam bentuk text maupun
-                    video yang bisa di akses secara gratis oleh semua kalangan umat manusia di alam
-                    semesta ini.
-                </p>
-            </section>
-            <!-- End Section: Text -->
-
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#" >About Us</a></h5>
-                    </div>
-                    <!--End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#" >Term of use</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#" >Privacy Policy</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#" >Contact</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-
-                    <!--Grid column-->
-                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <!-- End Grid column-->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- End Section: Links -->
-        </div>
-        <!-- End Grid container -->
         <!-- Copyright -->
         <div class="cc text-center p-3">
             © 2021 Copyright. All Rights Reserved.
@@ -342,6 +290,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!-- <script
@@ -353,7 +303,7 @@
         crossorigin="anonymous"></script> -->
 
     <!-- Custom Script -->
-    <script src="./assets/javascript/kode.js"></script>
+    <script src="/assets/javascript/kode.js"></script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>

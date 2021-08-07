@@ -8,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
     <!-- Link Font-Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@600&display=swap&effect=anaglyph" rel="stylesheet">
@@ -22,11 +21,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Link Custom Css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- Link Icon -->
-    <link rel="icon" type="image/ico" href="./assets/img/logo_icon.ico">
-    </link>
+    <link rel="icon" type="image/ico" href="../../img/logo_icon.ico" />
 
     <title>Programming Nusantara</title>
 </head>
@@ -36,12 +34,16 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
             <div class="font-effect-anaglyph">
-                <a id="text-icon" class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"> Programming Nusantara</a>
+                <a class="navbar-brand" href="/index.html"><img src="../../img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"> Programming Nusantara</a>
             </div>
             <button id="toggler" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder()">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fa fa-bars"></i>
             </button>
+            <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarScroll" aria-controls="navbarScroll"
+        aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"> <i class="fas fa-bars"></i> </span> </button> -->
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll multi-level" role="menu" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
@@ -126,7 +128,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <li>
-                                <a class="dropdown-item" href="./assets/belajar/c/home-c.html">C</a>
+                                <a class="dropdown-item" href="../../belajar/c/home-c.html">C</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">C++</a>
@@ -159,13 +161,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Karya
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <li>
-                                <a class="dropdown-item" href="./assets/karya/tools/index.html">Alat</a>
+                                <a class="dropdown-item" href="#">Alat</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">Games</a>
@@ -187,13 +189,68 @@
     <!-- End Navbar-->
 
     <!-- Content -->
-    <section id="cover">
-        <div class="cover bg-image d-flex justify-content-center align-items-center">
-            <div class="mask">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <h1 class="text-center">Enjoy Your Free Code Everyone
-                        <i class="far fa-smile"></i>
-                    </h1>
+    <section class="menuTools">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Matris.png" alt="matrix-thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Matrix Calculator</h5>
+                            <p class="card-text">Tool yang tepat untuk menghitung operasi-operasi pada matrix.</p>
+                            <a href="#" class="btn btn-primary">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="https://img.freepik.com/free-vector/maths-chalkboard_23-2148178219.jpg?size=626&ext=jpg" alt="Calculator-Standard">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculator</h5>
+                            <p class="card-text">Alat pembantu menghitung operasi matematika dengan cepat, mudah dan tepat.</p>
+                            <a href="calculator.html" class="btn btn-primary">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top img-fluid" src="https://us.123rf.com/450wm/bsd555/bsd5551909/bsd555190901525/130210001-compiler-concept-icon-software-development-machine-language-programming-data-filtering-computer-code.jpg?ver=6" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Compiler</h5>
+                            <p class="card-text">Alat mengcompile atau menerjemahkan dari bahasa pemrograman menjadi bahasa mesin. Tersedia berbagai macam pilihan compiler.</p>
+                            <a href="compiler-online.html" class="btn btn-primary">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="../../img/background_1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="../../img/background_1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../../img/background_1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -202,154 +259,20 @@
 
     <!-- Footer -->
     <footer class="text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <!-- Twitter -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
-
-                <!-- Google -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button">
-                    <i class="fab fa-google"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- Linkedin -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <!-- Github -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button">
-                    <i class="fab fa-github"></i>
-                </a>
-            </section>
-            <!-- End Section: Social media -->
-
-            <!-- Section: Form -->
-            <section class="">
-                <!-- Form -->
-                <form action="assets/php/insert.php" method="POST">
-                    <!--Grid row-->
-                    <div class="row d-flex justify-content-center">
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Sign up for our newsletter</strong>
-                            </p>
-                        </div>
-                        <!-- End Grid column-->
-                        <!-- Input -->
-                        <!--Grid column-->
-                        <div class="col-md-5 col-12">
-                            <!-- Email input -->
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" name="email" class="form-control" required>
-                                <label class="form-label" for="form5Example2">Email address</label>
-                            </div>
-                        </div>
-                        <!-- End Grid column-->
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <!-- Submit button -->
-                            <input type="submit" name="submitmailonly" value="Submit" placeholder="Submit" class="btn btn-outline-light mb-4">
-                        </div>
-                        <!--End Grid column-->
-                        <!-- End Input -->
-                    </div>
-                    <!--End Grid row-->
-                </form>
-                <!-- End Form -->
-            </section>
-            <!-- End Section: Form -->
-
-            <!-- Section: Text -->
-            <section class="mb-4">
-                <p>
-                    Programming Nusantara (PROGUSA) adalah salah satu website belajar bahasa pemrograman di Indonesia. PROGUSA melakukan pembelajaran dari dasar hingga menjadi profesional. PROGUSA memberikan materi-materi dalam bentuk text maupun video yang bisa di akses
-                    secara gratis oleh semua kalangan umat manusia di alam semesta ini.
-                </p>
-            </section>
-            <!-- End Section: Text -->
-
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">About Us</a></h5>
-                    </div>
-                    <!--End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Term of use</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Privacy Policy</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Contact</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-
-                    <!--Grid column-->
-                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <!-- End Grid column-->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- End Section: Links -->
-        </div>
-        <!-- End Grid container -->
-    </footer>
-    <!-- Copyright -->
-    <footer class="text-white">
         <!-- Copyright -->
         <div class="cc text-center p-3">
             © 2021 Copyright. All Rights Reserved.
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Copyright -->
     <!-- End Footer -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!-- <script
