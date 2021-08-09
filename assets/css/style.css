@@ -319,3 +319,16 @@ figure img.dennis-ritchie{
  transform: translateX(-100%); 
  }
 }
+
+/* tambahan temmy */
+
+.gambar-terkait{
+    max-width: 960px;
+    max-height: 640px;
+}
+
+.cmain article.container{
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 2cm;
+}
