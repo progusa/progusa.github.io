@@ -120,6 +120,47 @@ li.active a.nav-link {
     color: #fff!important;
 }
 
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 
 /* .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -355,24 +396,24 @@ figure img.dennis-ritchie {
 /* Move it (define the animation) */
 
 @keyframes scroll-left {
-0% {
-    transform: translateX(100%);
+    0% {
+        transform: translateX(100%);
     }
-100% {
-    transform: translateX(-100%);
+    100% {
+        transform: translateX(-100%);
     }
 }
 
+
 /* tambahan temmy */
 
-.gambar-terkait{
+.gambar-terkait {
     max-width: 960px;
     max-height: 640px;
 }
 
-.cmain article.container{
+.cmain article.container {
     padding-left: 20px;
     padding-right: 40px;
     padding-bottom: 2cm;
 }
-
