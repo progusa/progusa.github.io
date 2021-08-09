@@ -12,15 +12,22 @@ Spanish Green
 
 
 /*============= Init Text ================ */
+
 body {
     background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.code {
     font-family: 'Roboto Mono', monospace;
 }
 
-/*=====================================*/
-/* navbar style */
-/*=====================================*/
-nav.navbar{
+
+/*=====================================
+            navbar style
+=====================================*/
+
+nav.navbar {
     background-color: #5E05C2;
 }
 
@@ -30,7 +37,7 @@ nav.navbar{
     margin-right: 0px;
 }
 
-.font-effect-anaglyph{
+.font-effect-anaglyph {
     margin-right: 5px;
 }
 
@@ -38,12 +45,14 @@ nav.navbar{
     /* font-family: "Times New Roman", Times, serif; */
 }
 
+
 /* ========= Add Submenu Navbar ========*/
+
 .dropdown-submenu {
     position: relative;
 }
 
-.dropdown-submenu > .dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
     margin-top: -6px;
@@ -53,11 +62,11 @@ nav.navbar{
     border-radius: 0 6px 6px 6px;
 }
 
-.dropdown-submenu:hover > .dropdown-menu {
+.dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
 
-.dropdown-submenu > a:after {
+.dropdown-submenu>a:after {
     display: block;
     content: " ";
     float: right;
@@ -71,7 +80,7 @@ nav.navbar{
     margin-right: -10px;
 }
 
-.dropdown-submenu:hover > a:after {
+.dropdown-submenu:hover>a:after {
     border-left-color: #fff;
 }
 
@@ -79,7 +88,7 @@ nav.navbar{
     float: none;
 }
 
-.dropdown-submenu.pull-left > .dropdown-menu {
+.dropdown-submenu.pull-left>.dropdown-menu {
     left: -100%;
     margin-left: 10px;
     -webkit-border-radius: 6px 0 6px 6px;
@@ -107,14 +116,18 @@ nav.navbar{
     /* border: 2px solid black; */
 }
 
-li.active a.nav-link{
+li.active a.nav-link {
     color: #fff!important;
 }
+
 
 /* .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 } */
+
+
 /*======= Cover =========*/
+
 .cover {
     color: #fff;
     background-image: url("../img/background_1.jpeg");
@@ -130,147 +143,171 @@ li.active a.nav-link{
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+
 /*============ Index Tool Page Style ===============*/
-.menuTools{
+
+.menuTools {
     padding: 25px 25px;
 }
 
-.card{
+.card {
     margin: 0;
 }
 
+
 /*========== Custome Scroolbar ============== */
+
+
 /* Custom Scrollbar using CSS */
+
+
 /* scrollbar width */
+
 .custom-scrollbar-css::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
+
 
 /* scrollbar track */
+
 .custom-scrollbar-css::-webkit-scrollbar-track {
-  background: #eee;
+    background: #eee;
 }
+
 
 /* scrollbar handle */
+
 .custom-scrollbar-css::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background-color: #00d2ff;
-  background-image: linear-gradient(to top, #D00A88 0%, #5E05C2 100%);
+    border-radius: 1rem;
+    background-color: #00d2ff;
+    background-image: linear-gradient(to top, #D00A88 0%, #5E05C2 100%);
 }
 
+
 /* ===== Button =======*/
+
 .btn.btn-primary {
     color: #fff;
     background-color: #D00A88;
     border-color: #D00A88;
-  }
-  .btn.btn-primary.focus,
-  .btn.btn-primary:focus {
+}
+
+.btn.btn-primary.focus,
+.btn.btn-primary:focus {
     color: #fff;
     background-color: #83998A;
     border-color: #83998A;
     outline: none;
     box-shadow: none;
-  }
-  .btn.btn-primary:hover {
+}
+
+.btn.btn-primary:hover {
     color: #fff;
     background-color: #83998A;
     border-color: #83998A;
     outline: none;
     box-shadow: none;
-  }
-  .btn.btn-primary.active,
-  .btn.btn-primary:active {
+}
+
+.btn.btn-primary.active,
+.btn.btn-primary:active {
     color: #fff;
     background-color: #83998A;
     border-color: #83998A;
     outline: none;
-  }
-  .btn.btn-primary.active.focus,
-  .btn.btn-primary.active:focus,
-  .btn.btn-primary.active:hover,
-  .btn.btn-primary:active.focus,
-  .btn.btn-primary:active:focus,
-  .btn.btn-primary:active:hover {
+}
+
+.btn.btn-primary.active.focus,
+.btn.btn-primary.active:focus,
+.btn.btn-primary.active:hover,
+.btn.btn-primary:active.focus,
+.btn.btn-primary:active:focus,
+.btn.btn-primary:active:hover {
     color: #fff;
     background-color: #83998A;
     border-color: #83998A;
     outline: none;
     box-shadow: none;
-  }
+}
+
 
 /*=========== Footer =========*/
-footer{
+
+footer {
     background-color: #D00A88;
 }
 
-footer .cc{
+footer .cc {
     color: rgb(255, 255, 255);
     background-color: #1E151C;
 }
 
+
 /* STYLE Learn */
-.cmain article.container{
+
+.cmain article.container {
     border: 0.5px solid rgba(0, 0, 0, 0.103);
     padding: 17px 25px;
     background-color: white;
 }
-.tahap-belajar-c{
+
+.tahap-belajar-c {
     padding: 20px;
     margin-bottom: 25px;
     background-color: #D00A88;
     color: white;
 }
 
-.link-light:hover{
+.link-light:hover {
     color: #1E151C;
 }
 
-figure img.dennis-ritchie{
+figure img.dennis-ritchie {
     height: 350px;
 }
 
 @media screen and (max-width: 768px) {
-    .leveling{
+    .leveling {
         margin-bottom: 10px;
     }
 }
 
+
 /* Style Tool Calculator */
-.Calculator .container.layout{
+
+.Calculator .container.layout {
     height: 100vh;
 }
 
-.container.title-cs{
+.container.title-cs {
     padding-bottom: 17px;
 }
 
-.container.grid-calculator{
+.container.grid-calculator {
     background-color: #00d2ff;
     width: 45vh;
     margin-bottom: 17px;
     padding-bottom: 17px;
 }
 
-.container.main-calculator{
+.container.main-calculator {
     padding-top: 10px;
 }
 
-.display-cs{
+.display-cs {
     background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 
-.display-temp-cs{
+.display-temp-cs {
     background-color: rgba(0, 0, 0);
     color: #fff;
     font-size: small;
 }
-.value-cs{
-    
-}
 
-.btn-operator .btn-custom-cs{
+.value-cs {}
+
+.btn-operator .btn-custom-cs {
     background-color: #D00A88;
     color: #fff;
     border: 1px solid #1E151C;
@@ -279,45 +316,51 @@ figure img.dennis-ritchie{
     font-size: medium;
 }
 
-.btn-custom-cs:hover{
+.btn-custom-cs:hover {
     background-color: #83998A;
 }
 
 @media screen and (max-width: 425px) {
-    .btn-operator .btn-custom-cs{
+    .btn-operator .btn-custom-cs {
         font-size: smaller;
     }
 }
 
+
 /* style marque (text-running) */
+
 .scroll-left {
- height: 50px;	
- overflow: hidden;
- position: relative;
- background: yellow;
- color: orange;
- border: 1px solid orange;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: yellow;
+    color: orange;
+    border: 1px solid orange;
 }
+
 .scroll-left p {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- transform:translateX(100%);
- /* Apply animation to this element */
- animation: scroll-left 15s linear infinite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
 }
+
+
 /* Move it (define the animation) */
+
 @keyframes scroll-left {
- 0%   {
- transform: translateX(100%); 		
- }
- 100% {
- transform: translateX(-100%); 
- }
+0% {
+    transform: translateX(100%);
+    }
+100% {
+    transform: translateX(-100%);
+    }
 }
 
 /* tambahan temmy */
@@ -332,3 +375,4 @@ figure img.dennis-ritchie{
     padding-right: 40px;
     padding-bottom: 2cm;
 }
+

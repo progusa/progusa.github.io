@@ -1,0 +1,72 @@
+/*
+Palette
+Purple
+#5E05C2
+Red Violet
+#D00A88
+Thunder
+#1E151C
+Spanish Green
+#83998A
+*/
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #D00A88;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #1E151C;
+    color: white;
+}
+
+#sidebarScroll {
+    padding-top: 10px;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 5px 16px;
+}
+
+footer {
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    #sidebarScroll {
+        padding-top: 0;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    div.content,
+    footer {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {}

@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@600&display=swap&effect=anaglyph" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
@@ -21,12 +24,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Link Custom Css -->
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style-sidebar.css" />
 
     <!-- Link Icon -->
     <link rel="icon" type="image/ico" href="../../img/logo_icon.ico" />
 
     <title>Programming Nusantara</title>
+
 </head>
 
 <body>
@@ -34,16 +39,12 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
             <div class="font-effect-anaglyph">
-                <a class="navbar-brand" href="../../../index.html"><img src="../../img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"> Programming Nusantara</a>
+                <a id="text-icon" class="navbar-brand" href="#"><img src="/assets/img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"> Programming Nusantara</a>
             </div>
-            <button id="toggler" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder()">
+            <button id="toggler" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder(this.id)">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fa fa-bars"></i>
             </button>
-            <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-        data-mdb-target="#navbarScroll" aria-controls="navbarScroll"
-        aria-expanded="false" aria-label="Toggle navigation"> <span
-        class="navbar-toggler-icon"> <i class="fas fa-bars"></i> </span> </button> -->
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll multi-level" role="menu" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
@@ -123,12 +124,12 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Belajar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <li>
-                                <a class="dropdown-item" href="#">C</a>
+                                <a class="dropdown-item" href="/assets/belajar/c/home-c.html">C</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">C++</a>
@@ -174,7 +175,25 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          Artikel
+                      </a>
+                    </li>
                 </ul>
+                <!-- Search Button -->
+                <!-- <div class="d-flex">
+                    <div class="input-group">
+                        <div class="form-outline form-white">
+                            <input type="search" id="form1" class="form-control" />
+                            <label class="form-label" for="form1">Search</label>
+                        </div>
+                        <button type="button" class="btn btn-primary px-3 me-2">
+                          <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div> -->
+                <!-- End Search Button -->
                 <div class="d-flex align-items-center">
                     <button type="button" class="btn btn-primary px-3 me-2">
                         Masuk
@@ -189,95 +208,45 @@
     <!-- End Navbar-->
 
     <!-- Sidebar -->
-
+    <div id="mySidebar" class="sidebar">
+        <div id="button-sidebar" class="d-flex justify-content-center">
+            <button id="toggler-sidebar" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarScroll" aria-controls="sidebarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder(this.id)">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="collapse container" id="sidebarScroll">
+            <h5>Basic</h5>
+            <a class="active" href="#">Pengenalan</a>
+            <a href="#">Syntax</a>
+            <a href="#">Output</a>
+            <a href="#"> . . .</a>
+            <h5>Intermediate</h5>
+            <a href="#"> . . .</a>
+            <h5>Professional</h5>
+            <a href="#"> . . .</a>
+        </div>
+    </div>
     <!-- End Sidebar -->
 
     <!-- Content -->
-    <section class="cmain">
-        <article class="container">
-            <header>
-                <h1>Belajar Bahasa C</h1>
-                <div class="byline">
-                    <address class="author">By <a rel="author" href="#">Arsal Fadilah</a> on <time pubdate
-                            datetime="2021-08-03" title="03 August 2021">03/08/2021</time></address>
+    <div class="content">
+        <h2>Judul Content</h2>
+        <div class="byline">
+            <address class="author">By <a rel="author" href="#">Arsal Fadilah</a> on <time pubdate
+                    datetime="2021-08-03" title="03 August 2021">03/08/2021</time></address>
 
-                </div>
-            </header>
-            <!-- video belum ada : templatenya udah ada -->
-            <!-- <div class="c-vid-content text-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ipIKT2TJ_oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> -->
+        </div>
 
-            <div class="c-content">
-                <p>Hai, sobat PN!. Kali ini kita akan belajar tentang bahasa pemrograman C nich. Sobat PN tahu ngga? Bahasa C ini dijuluki sebagai "bapak" dari bahasa pemrograman yang lainnya lho. Kenapa? karena bahasa C banyak mengingspirasi bahasa pemrograman
-                    seperti Java, Python, C++, C#, PHP dan sebagainya.
-                </p>
-                <p>Tak kenal maka tak sayang. Sobat PN perkenalkan penemu dari bahasa C ialah Dennis Rithcie.</p>
-                <figure class="text-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dennis_Ritchie_2011.jpg/466px-Dennis_Ritchie_2011.jpg" class="img-fluid img-thumbnail mx-auto d-block dennis-ritchie" alt="Dennis Ritchie">
-                    <figcaption class="figure-caption text-center">Dennis_Ritchie_2011</figcaption>
-                </figure>
-                <p>Yups beliau ini sebenarnya sedang mengembangkan bahasa B sekitar pada tahun 1970-an di Bell Telephone Laboratories Inc. (sekarang adalah AT&T Bell Laboratories). Namun, eh ternyata beliau malah bikin bahasa baru, sungguh jenius. Bahasa
-                    C pertama kali digunakan pada komputer Digital Equipment Corporation PDP-11 yang menggunakan sistem operasi UNIX.</p>
-                <p>Oke, balik lagi ke topik, bahasa C dibacanya "si" adalah bahasa pemrograman yang memiliki sifat prosedural programming. Apa itu prosedural programming? desain pemrograman dengan pendekatan “Top Down”. Ih, kok banyak betul istilah nya
-                    <i class="far fa-frown-open"></i>. Tenang, mimin jelaskan. Jadi top down itu adalah tugas-tugas kompleks dipecah menjadi bagian yang lebih kecil, sampai sub-tugas tersebut mudah diimplementasikan.
-                </p>
-                <p>Ah, tidak apa kalau kalian saat ini belum paham mengenai bahasa C. Yang penting kalian punya semangat untuk belajar terus itu udah cukup memenuhi syarat menjadi programmer kok sobat PN, hehehe. Yuk cus aja langsung belajar bahasa C nya
-                    dari awal.</p>
-                <h2 class="text-center">Ayo Mulai!</h2>
-                <div class="alert alert-warning" role="alert">
-                    Ikuti secara bertahap yah sobat PN, agar kalian tidak bingung <i class="far fa-smile"> !</i>
-                </div>
-                <div class="tahap-belajar-c shadow">
-                    <div class="container">
-                        <div class="row">
-                            <div class="leveling col-sm-6 col-md-4 shadow-5-strong">
-                                <h3 class="text-center">Basic</h3>
-                                <ul>
-                                    <li><a class="link-light" href="#">Syntax</a></li>
-                                    <li><a class="link-light" href="#">Output Basic</a></li>
-                                    <li><a class="link-light" href="#">Data Type</a></li>
-                                    <li><a class="link-light" href="#">Input</a></li>
-                                    <li><a class="link-light" href="#">Operator</a></li>
-                                    <li><a class="link-light" href="#">Condition</a></li>
-                                    <li><a class="link-light" href="#">Loop</a></li>
-                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
-                                </ul>
-                            </div>
-                            <div class="leveling col-sm-6 col-md-4 shadow-5-strong">
-                                <h3 class="text-center">Intermediate</h3>
-                                <ul>
-                                    <li><a class="link-light" href="#">Complete Output</a></li>
-                                    <li><a class="link-light" href="#">Collection Data Type</a></li>
-                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
-                                </ul>
-                            </div>
-                            <div class="leveling col-sm col-md-4 shadow-5-strong">
-                                <h3 class="text-center">Profesional</h3>
-                                <ul>
-                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="leveling col shadow-5-strong">
-                                <h3 class="text-center">Master</h3>
-                                <ul>
-                                    <li><a class="link-light" href="#">Belum ada . . .</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="alert alert-primary" role="alert">
-                    Ayo kenapa masih mikir? buruan klik materi-materinya biar jadi professional dan mendapatkan banyak cuan <i class="far fa-grin-wink"></i></i>
-                </div>
-                <p></p>
-            </div>
-            <p>Salam hormat,</p>
-            <p>Programming Nusantara</p>
-        </article>
-    </section>
+        <div class="d-flex justify-content-center mb-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/izKcrB0nZ6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit convallis molestie. In hac habitasse platea dictumst. Maecenas molestie eros tempus felis mattis, mollis lobortis orci molestie. Vivamus efficitur interdum porttitor.
+            Nunc iaculis dolor in malesuada auctor. Sed lobortis ultrices massa in faucibus. Duis in auctor dui, at dapibus mauris. Praesent eu nunc sapien. In at imperdiet neque, condimentum tempus purus. Fusce faucibus euismod ex, porttitor lobortis
+            sem blandit eu. Sed euismod tortor non magna mattis sodales.</p>
+        <p>Pellentesque at nibh tincidunt, efficitur velit et, scelerisque justo. Nullam tincidunt elit a purus gravida tempus. Fusce purus diam, porttitor quis imperdiet in, consequat ac ante. Cras nibh ligula, finibus et enim ac, suscipit consequat metus.
+            Aliquam id neque congue nisl pellentesque interdum sit amet in quam. Fusce consectetur nibh vel eros consequat pretium. Vestibulum a tincidunt est. Fusce id tortor mattis, fringilla elit at, dignissim justo.</p>
+    </div>
     <!-- End Content -->
 
     <!-- Footer -->
@@ -307,7 +276,9 @@
         crossorigin="anonymous"></script> -->
 
     <!-- Custom Script -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="/assets/javascript/kode.js"></script>
+    <script src="/assets/javascript/sidebar.js"></script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
