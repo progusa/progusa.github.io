@@ -1,100 +1,16 @@
-$(document).ready(function() {
-    // Single Page Nav for highlighting nav items
-    $("#tmMainNav").singlePageNav();
-
-    // Carousel in Our Work section
-    $(".tm-gallery").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        responsive: [{
-                breakpoint: 1600,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-
-    // Image Pop Up
-    $(".tm-gallery").magnificPopup({
-        delegate: "a", // child items selector, by clicking on it popup will open
-        type: "image",
-        gallery: { enabled: true }
-    });
-
-    $(".navbar-toggler").on("click", function(e) {
-        $(".tm-sidebar").toggleClass("show");
-        e.stopPropagation();
-    });
-
-    $("html").click(function(e) {
-        var sidebar = document.getElementById("tmSidebar");
-
-        if (!sidebar.contains(e.target)) {
-            $(".tm-sidebar").removeClass("show");
-        }
-    });
-
-    $("#tmMainNav .nav-link").click(function(e) {
-        $(".tm-sidebar").removeClass("show");
-    });
-});
-
-//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    });
+function responsiveSideBar(icon) {
+    if (icon.matches) {
+        document.getElementById("sidebarScroll").classList.add("collapse")
+        document.getElementById("button-sidebar").innerHTML = `
+<button id="toggler-sidebar" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarScroll" aria-controls="sidebarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder(this.id)">
+                <i class="fa fa-bars"></i>
+            </button>`;
+    } else {
+        document.getElementById("button-sidebar").innerHTML = ``;
+        document.getElementById("sidebarScroll").classList.remove("collapse");
+    }
 }
+
+var side_bar = window.matchMedia("(max-width:700px)");
+responsiveSideBar(side_bar);
+side_bar.addListener(responsiveSideBar);
