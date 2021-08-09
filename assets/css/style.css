@@ -355,10 +355,24 @@ figure img.dennis-ritchie {
 /* Move it (define the animation) */
 
 @keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
+0% {
+    transform: translateX(100%);
     }
-    100% {
-        transform: translateX(-100%);
+100% {
+    transform: translateX(-100%);
     }
 }
+
+/* tambahan temmy */
+
+.gambar-terkait{
+    max-width: 960px;
+    max-height: 640px;
+}
+
+.cmain article.container{
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 2cm;
+}
+
