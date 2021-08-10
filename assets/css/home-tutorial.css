@@ -1,0 +1,35 @@
+/*
+Palette
+Purple
+#5E05C2
+Red Violet
+#D00A88
+Thunder
+#1E151C
+Spanish Green
+#83998A
+*/
+
+.home-tutorial .container {
+    padding: 50px 0px;
+}
+
+.accordion-item {
+    border-color: #D00A88;
+}
+
+.accordion-item>h2.accordion-header {
+    color: #fff;
+    background-color: #D00A88;
+    border-color: #D00A88;
+}
+
+.accordion-button:hover {
+    background-color: #ff44bb;
+    color: white;
+}
+
+.accordion-button:not(:hover):focus {
+    background-color: #D00A88;
+    color: white;
+}

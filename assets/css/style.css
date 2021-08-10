@@ -203,16 +203,16 @@ div.a-grup {
 .btn.btn-primary.focus,
 .btn.btn-primary:focus {
     color: #fff;
-    background-color: #83998A;
-    border-color: #83998A;
+    background-color: #ff44bb;
+    border-color: #ff44bb;
     outline: none;
     box-shadow: none;
 }
 
 .btn.btn-primary:hover {
     color: #fff;
-    background-color: #83998A;
-    border-color: #83998A;
+    background-color: #ff44bb;
+    border-color: #ff44bb;
     outline: none;
     box-shadow: none;
 }
@@ -220,8 +220,8 @@ div.a-grup {
 .btn.btn-primary.active,
 .btn.btn-primary:active {
     color: #fff;
-    background-color: #83998A;
-    border-color: #83998A;
+    background-color: #ff44bb;
+    border-color: #ff44bb;
     outline: none;
 }
 
@@ -232,8 +232,8 @@ div.a-grup {
 .btn.btn-primary:active:focus,
 .btn.btn-primary:active:hover {
     color: #fff;
-    background-color: #83998A;
-    border-color: #83998A;
+    background-color: #ff44bb;
+    border-color: #ff44bb;
     outline: none;
     box-shadow: none;
 }
