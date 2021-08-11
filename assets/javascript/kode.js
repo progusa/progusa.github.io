@@ -81,3 +81,13 @@ function responsiveNavIcon(icon) {
 var text_icon = window.matchMedia("(max-width:370px)");
 responsiveNavIcon(text_icon);
 text_icon.addListener(responsiveNavIcon);
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    document.getElementById("succes-copy").style.display = "block";
+    setTimeout(() => { document.getElementById("succes-copy").style.display = "none";; }, 3000);
+}

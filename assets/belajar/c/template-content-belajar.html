@@ -28,7 +28,7 @@
     <!-- Link Icon -->
     <link rel="icon" type="image/ico" href="../../img/logo_icon.ico" />
 
-    <title>Programming Nusantara</title>
+    <title>Pengenalan Bahasa C</title>
 
 </head>
 
@@ -199,16 +199,25 @@
                 <i class="fa fa-bars"></i>
             </button>
         </div>
-        <div class="collapse container" id="sidebarScroll">
-            <h5>Basic</h5>
+        <div class="collapse container mb-3" id="sidebarScroll">
+            <h5><b>Basic</b></h5>
             <a class="active" href="#">Pengenalan</a>
             <a href="#">Syntax</a>
             <a href="#">Output</a>
-            <a href="#"> . . .</a>
-            <h5>Intermediate</h5>
-            <a href="#"> . . .</a>
-            <h5>Professional</h5>
-            <a href="#"> . . .</a>
+            <a href="#">Input</a>
+            <a href="#">Tipe Data</a>
+            <a href="#">Operator</a>
+            <a href="#">Condition</a>
+            <a href="#">Loop</a>
+            <h5><b>Intermediate</b></h5>
+            <a href="#">Tipe Data Abstract</a>
+            <a href="#">Modular Programming</a>
+            <a href="#">Fungsi</a>
+            <a href="#">Prosedur</a>
+            <h5><b>Professional</b></h5>
+            <a href="#">Write File</a>
+            <a href="#">Read File</a>
+            <a href="#">Sorting File</a>
         </div>
     </div>
     <!-- End Sidebar -->
@@ -243,6 +252,27 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit convallis molestie. In hac habitasse platea dictumst. Maecenas molestie eros tempus felis mattis, mollis lobortis orci molestie. Vivamus efficitur interdum porttitor.
             Nunc iaculis dolor in malesuada auctor. Sed lobortis ultrices massa in faucibus. Duis in auctor dui, at dapibus mauris. Praesent eu nunc sapien. In at imperdiet neque, condimentum tempus purus. Fusce faucibus euismod ex, porttitor lobortis
             sem blandit eu. Sed euismod tortor non magna mattis sodales.</p>
+        <!-- Code Example -->
+        <div class="example-code">
+            <div class="code-header">
+                <h4><b>Contoh :</b></h4>
+            </div>
+            <div class="code">
+                <pre id="target-copy" class="formatting">#include&lt;stdio.h&gt
+
+int main(){
+    int i = 0;
+    printf("Hello 'W'orld");
+    return 0;
+}</pre></div>
+            <div id="succes-copy" class="alert alert-success">
+                Succes Copy Text!
+            </div>
+            <div class="copy-btn d-flex justify-content-center mb-3">
+                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard" onclick="copyToClipboard('#target-copy')">Copy</button>
+            </div>
+        </div>
+        <!-- End Code Example -->
         <p>Pellentesque at nibh tincidunt, efficitur velit et, scelerisque justo. Nullam tincidunt elit a purus gravida tempus. Fusce purus diam, porttitor quis imperdiet in, consequat ac ante. Cras nibh ligula, finibus et enim ac, suscipit consequat metus.
             Aliquam id neque congue nisl pellentesque interdum sit amet in quam. Fusce consectetur nibh vel eros consequat pretium. Vestibulum a tincidunt est. Fusce id tortor mattis, fringilla elit at, dignissim justo.</p>
     </div>

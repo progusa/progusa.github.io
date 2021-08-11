@@ -482,3 +482,23 @@ figure img.dennis-ritchie {
 .zoom-out:hover {
     transform: scale(0.9);
 }
+
+
+/* STYLE EXAMPLE CODE */
+
+.code>pre {
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 0, 191);
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+#succes-copy {
+    display: none;
+}
+
+button {
+    background-color: #00d2ff;
+}
