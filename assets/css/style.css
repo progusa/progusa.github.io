@@ -384,3 +384,101 @@ figure img.dennis-ritchie {
     padding-right: 40px;
     padding-bottom: 2cm;
 }
+
+
+/* STYLE HOME TANTANGAN dan Belajar */
+
+.home-tantangan>.container,
+.home-belajar>.container {
+    padding: 20px 0;
+}
+
+.home-tantangan>.container>.row>.col-sm-4,
+.home-belajar>.container>.row>.col-sm-4 {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background: rgb(120, 0, 255);
+    background: linear-gradient(45deg, rgba(120, 0, 255, 1) 0%, rgba(0, 255, 255, 1) 50%, rgba(255, 0, 162, 1) 100%);
+    width: 300px;
+    height: 400px;
+    border: 1px solid transparent;
+    perspective: 1000px;
+    margin-bottom: 10px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+}
+
+.flip-card-front img {
+    padding: 20px;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background: transparent;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* STYLE HOME BELAJAR */
+
+
+/* Zoom Effect */
+
+.zoom-out {
+    padding: 50px;
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom-out:hover {
+    transform: scale(0.9);
+}
