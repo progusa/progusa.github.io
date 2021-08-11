@@ -21,6 +21,9 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
+    <!-- Link Highlight Js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+
     <!-- Link Custom Css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/style-sidebar.css" />
@@ -256,15 +259,23 @@
         <div class="example-code">
             <div class="code-header">
                 <h4><b>Contoh :</b></h4>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitchCheckDisabled">Dark Mode (maintenance)</label>
+                </div>
             </div>
             <div class="code">
-                <pre id="target-copy" class="formatting">#include&lt;stdio.h&gt
-
+                <!-- Please write exact structures code -->
+                <pre><code id="target-copy" class="language-c">/*== This is Header ==*/
+#include&lt;stdio.h&gt
+//comment like this
+/*Body C*/
 int main(){
-    int i = 0;
-    printf("Hello 'W'orld");
+    printf("Hello, World!");
     return 0;
-}</pre></div>
+}</code></pre>
+                <!-- Don't give space in the end of code pre -->
+            </div>
             <div id="succes-copy" class="alert alert-success">
                 Succes Copy Text!
             </div>
@@ -310,6 +321,12 @@ int main(){
     <!-- Custom Script -->
     <script src="/assets/javascript/kode.js"></script>
     <script src="/assets/javascript/sidebar.js"></script>
+
+    <!-- Required for highlight text -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>

@@ -489,16 +489,16 @@ figure img.dennis-ritchie {
 .code>pre {
     background-color: #ffffff;
     border: 1px solid rgb(255, 0, 191);
-    padding: 10px;
+    padding: 5px;
     margin: 0;
     margin-bottom: 15px;
     overflow: auto;
 }
 
-#succes-copy {
-    display: none;
+pre>code {
+    background-color: #ffffff!important;
 }
 
-button {
-    background-color: #00d2ff;
+#succes-copy {
+    display: none;
 }

@@ -21,6 +21,13 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
+    <!-- Link Highlight Js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+
     <!-- Link Custom Css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/style-sidebar.css" />
@@ -258,13 +265,13 @@
                 <h4><b>Contoh :</b></h4>
             </div>
             <div class="code">
-                <pre id="target-copy" class="formatting">#include&lt;stdio.h&gt
+                <pre><code id="target-copy" class="language-c">#include&lt;stdio.h&gt
 
 int main(){
-    int i = 0;
-    printf("Hello 'W'orld");
+    printf("Hello, World!");
     return 0;
-}</pre></div>
+}</code></pre>
+            </div>
             <div id="succes-copy" class="alert alert-success">
                 Succes Copy Text!
             </div>
@@ -310,6 +317,7 @@ int main(){
     <!-- Custom Script -->
     <script src="/assets/javascript/kode.js"></script>
     <script src="/assets/javascript/sidebar.js"></script>
+    <script src="/assets/javascript/get-api.js"></script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
