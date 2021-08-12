@@ -106,7 +106,6 @@ $('input[name=checkbox]').change(function() {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
         var oldUrl = $('#style-code').attr("href");
-        console.log(oldUrl);
         var newUrl = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/dracula.min.css";
         $('#style-code').attr("href", newUrl);
         $('.breadcrumb-item.active').css("color", "white");
@@ -115,7 +114,6 @@ $('input[name=checkbox]').change(function() {
         document.body.style.backgroundColor = "#fafafa";
         document.body.style.color = "black";
         var oldUrl = $('#style-code').attr("href");
-        console.log(oldUrl);
         var newUrl = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css";
         $('#style-code').attr("href", newUrl);
         $('.breadcrumb-item.active').css("color", "#757575");
