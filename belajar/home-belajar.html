@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@600&display=swap&effect=anaglyph" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
@@ -21,15 +21,13 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
-    <!-- Link Highlight Js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
-
     <!-- Link Custom Css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/style-sidebar.css" />
+    <link rel="stylesheet" href="/assets/css/style-home-karya.css" />
+
 
     <!-- Link Icon -->
-    <link rel="icon" type="image/ico" href="../../img/logo_icon.ico" />
+    <link rel="icon" type="image/ico" href="/assets/img/logo_icon.ico" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKN58Z4GL5"></script>
@@ -44,8 +42,7 @@
         gtag('config', 'G-GKN58Z4GL5');
     </script>
 
-    <title>Pengenalan Bahasa C</title>
-
+    <title>Programming Nusantara</title>
 </head>
 
 <body>
@@ -63,14 +60,14 @@
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll multi-level" role="menu" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="/assets/tutorial/home-tutorial.html" class="nav-link" type="button">
+                            <a id="home-tutorial" href="/tutorial/home-tutorial.html" class="nav-link" type="button">
                               Tutorial
                             </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="/assets/tantangan/home-tantangan.html" class="nav-link" type="button">
+                            <a id="home-tantangan" href="/tantangan/home-tantangan.html" class="nav-link" type="button">
                               Tantangan
                             </a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,28 +75,28 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="#">C</a>
+                                    <a id="tantangan-c" class="dropdown-item" href="#">C</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">C++</a>
+                                    <a id="tantangan-c++" class="dropdown-item" href="#">C++</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Java</a>
+                                    <a id="tantangan-java" class="dropdown-item" href="#">Java</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Python</a>
+                                    <a id="tantangan-python" class="dropdown-item" href="#">Python</a>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">Website</a>
+                                    <a id="tantangan-website" class="dropdown-item" href="#">Website</a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="#">HTML</a>
+                                            <a id="tantangan-html" class="dropdown-item" href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">CSS</a>
+                                            <a id="tantangan-css" class="dropdown-item" href="#">CSS</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Javascript</a>
+                                            <a id="tantangan-javascript" class="dropdown-item" href="#">Javascript</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -114,7 +111,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="/assets/belajar/home-belajar.html" class="nav-link active" type="button">
+                            <a id="home-belajar" href="/belajar/home-belajar.html" class="nav-link active" type="button">
                               Belajar
                             </a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -122,28 +119,28 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="/assets/belajar/c/template-perkenalan-bahasa.html">C</a>
+                                    <a id="belajarc" class="dropdown-item" href="/belajar/c/template-perkenalan-bahasa.html">C</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">C++</a>
+                                    <a id="belajar-c++" class="dropdown-item" href="#">C++</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Java</a>
+                                    <a id="belajar-java" class="dropdown-item" href="#">Java</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Python</a>
+                                    <a id="belajar-python" class="dropdown-item" href="#">Python</a>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">Website</a>
+                                    <a id="belajar-website" class="dropdown-item" href="#">Website</a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="#">HTML</a>
+                                            <a id="belajar-html" class="dropdown-item" href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">CSS</a>
+                                            <a id="belajar-css" class="dropdown-item" href="#">CSS</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Javascript</a>
+                                            <a id="belajar-javascript" class="dropdown-item" href="#">Javascript</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -158,7 +155,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="/assets/karya/home-karya.html" class="nav-link" type="button">
+                            <a id="home-karya" href="/karya/home-karya.html" class="nav-link" type="button">
                               Karya
                             </a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -166,17 +163,17 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="/assets/karya/tools/index-tools.html">Alat</a>
+                                    <a id="karya-alat" class="dropdown-item" href="/karya/tools/index-tools.html">Alat</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/assets/karya/games/index-games.html">Games</a>
+                                    <a id="karya-games" class="dropdown-item" href="/karya/games/index-games.html">Games</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a class="nav-link" href="/assets/artikel/home-artikel.html">
+                            <a id="home-artikel" class="nav-link" href="/artikel/home-artikel.html">
                           Artikel
                       </a>
                         </div>
@@ -208,94 +205,43 @@
     </nav>
     <!-- End Navbar-->
 
-    <!-- Sidebar -->
-    <div id="mySidebar" class="sidebar">
-        <div id="button-sidebar" class="d-flex justify-content-center">
-            <button id="toggler-sidebar" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarScroll" aria-controls="sidebarScroll" aria-expanded="false" aria-label="Toggle navigation" onclick="addBorder(this.id)">
-                <i class="fa fa-bars"></i>
-            </button>
-        </div>
-        <div class="collapse container mb-3" id="sidebarScroll">
-            <h5><b>Basic</b></h5>
-            <a class="active" href="#">Pengenalan</a>
-            <a href="#">Syntax</a>
-            <a href="#">Output</a>
-            <a href="#">Input</a>
-            <a href="#">Tipe Data</a>
-            <a href="#">Operator</a>
-            <a href="#">Condition</a>
-            <a href="#">Loop</a>
-            <h5><b>Intermediate</b></h5>
-            <a href="#">Tipe Data Abstract</a>
-            <a href="#">Modular Programming</a>
-            <a href="#">Fungsi</a>
-            <a href="#">Prosedur</a>
-            <h5><b>Professional</b></h5>
-            <a href="#">Write File</a>
-            <a href="#">Read File</a>
-            <a href="#">Sorting File</a>
-        </div>
-    </div>
-    <!-- End Sidebar -->
-
     <!-- Content -->
-    <div class="content">
-        <h2>Judul Content</h2>
-        <div class="row">
-            <div class="col-xl-9">
-                <div class="byline">
-                    <address class="author">By <a rel="author" href="#">Arsal Fadilah</a> on <time pubdate
-                            datetime="2021-08-03" title="03 August 2021">03/08/2021</time></address>
+    <section class="home-belajar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="/belajar/c/pengenalan-c.html">
+                        <img class="img-fluid zoom-out" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="/belajar/c++/pengenalan-c++.html">
+                        <img class="img-fluid zoom-out" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png" alt="C++ Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-fluid zoom-out" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" alt="C# Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-fluid zoom-out" src="/assets/img/java-logo.png" alt="Java Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <img class="img-fluid zoom-out" src="/assets/img/python-logo.png" alt="Python Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 d-flex justify-content-center align-content-center flex-wrap">
+                    <a href="#">
+                        And More
+                    </a>
                 </div>
             </div>
-            <div class="col-xl-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">C</a></li>
-                        <li class="breadcrumb-item"><a href="#">Basic</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Pengenalan</li>
-                    </ol>
-                </nav>
-            </div>
         </div>
-
-
-        <!-- End Breadcumbs -->
-        <div class="d-flex justify-content-center mb-3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/izKcrB0nZ6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit convallis molestie. In hac habitasse platea dictumst. Maecenas molestie eros tempus felis mattis, mollis lobortis orci molestie. Vivamus efficitur interdum porttitor.
-            Nunc iaculis dolor in malesuada auctor. Sed lobortis ultrices massa in faucibus. Duis in auctor dui, at dapibus mauris. Praesent eu nunc sapien. In at imperdiet neque, condimentum tempus purus. Fusce faucibus euismod ex, porttitor lobortis
-            sem blandit eu. Sed euismod tortor non magna mattis sodales.</p>
-        <!-- Code Example -->
-        <div class="example-code">
-            <div class="code-header">
-                <h4><b>Contoh :</b></h4>
-            </div>
-            <div class="code">
-                <!-- Please write exact structures code -->
-                <pre><code id="target-copy" class="language-c">/*== This is Header ==*/
-#include&lt;stdio.h&gt
-//comment like this
-/*Body C*/
-int main(){
-    printf("Hello, World!");
-    return 0;
-}</code></pre>
-                <!-- Don't give space in the end of code pre -->
-            </div>
-            <div id="succes-copy" class="alert alert-success copy">
-                Succes Copy Text!
-            </div>
-            <div class="copy-btn d-flex justify-content-center mb-3">
-                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard" onclick="copyToClipboard('#target-copy', 'succes-copy')">Copy</button>
-            </div>
-        </div>
-        <!-- End Code Example -->
-        <p>Pellentesque at nibh tincidunt, efficitur velit et, scelerisque justo. Nullam tincidunt elit a purus gravida tempus. Fusce purus diam, porttitor quis imperdiet in, consequat ac ante. Cras nibh ligula, finibus et enim ac, suscipit consequat metus.
-            Aliquam id neque congue nisl pellentesque interdum sit amet in quam. Fusce consectetur nibh vel eros consequat pretium. Vestibulum a tincidunt est. Fusce id tortor mattis, fringilla elit at, dignissim justo.</p>
-    </div>
+    </section>
     <!-- End Content -->
 
     <!-- Footer -->
@@ -328,12 +274,10 @@ int main(){
     <!-- End Script Wajib -->
 
     <!-- Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <script src="/assets/javascript/kode.js"></script>
-    <script src="/assets/javascript/sidebar.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
+    <script src="/assets/javascript/truncate-text.js"></script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>

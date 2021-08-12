@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@600&display=swap&effect=anaglyph" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
@@ -58,14 +57,14 @@
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll multi-level" role="menu" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="/assets/tutorial/home-tutorial.html" class="nav-link" type="button">
+                            <a id="home-tutorial" href="/tutorial/home-tutorial.html" class="nav-link active" type="button">
                               Tutorial
                             </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="#home-tantangan.hmtl" class="nav-link" type="button">
+                            <a id="home-tantangan" href="/tantangan/home-tantangan.html" class="nav-link" type="button">
                               Tantangan
                             </a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,28 +72,28 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="#">C</a>
+                                    <a id="tantangan-c" class="dropdown-item" href="#">C</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">C++</a>
+                                    <a id="tantangan-c++" class="dropdown-item" href="#">C++</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Java</a>
+                                    <a id="tantangan-java" class="dropdown-item" href="#">Java</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Python</a>
+                                    <a id="tantangan-python" class="dropdown-item" href="#">Python</a>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">Website</a>
+                                    <a id="tantangan-website" class="dropdown-item" href="#">Website</a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="#">HTML</a>
+                                            <a id="tantangan-html" class="dropdown-item" href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">CSS</a>
+                                            <a id="tantangan-css" class="dropdown-item" href="#">CSS</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Javascript</a>
+                                            <a id="tantangan-javascript" class="dropdown-item" href="#">Javascript</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -109,7 +108,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="/assets/belajar/home-belajar.html" class="nav-link" type="button">
+                            <a id="home-belajar" href="/belajar/home-belajar.html" class="nav-link" type="button">
                               Belajar
                             </a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,28 +116,28 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="/assets/belajar/c/template-perkenalan-bahasa.html">C</a>
+                                    <a id="belajarc" class="dropdown-item" href="/belajar/c/template-perkenalan-bahasa.html">C</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">C++</a>
+                                    <a id="belajar-c++" class="dropdown-item" href="#">C++</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Java</a>
+                                    <a id="belajar-java" class="dropdown-item" href="#">Java</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Python</a>
+                                    <a id="belajar-python" class="dropdown-item" href="#">Python</a>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">Website</a>
+                                    <a id="belajar-website" class="dropdown-item" href="#">Website</a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="#">HTML</a>
+                                            <a id="belajar-html" class="dropdown-item" href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">CSS</a>
+                                            <a id="belajar-css" class="dropdown-item" href="#">CSS</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Javascript</a>
+                                            <a id="belajar-javascript" class="dropdown-item" href="#">Javascript</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -153,7 +152,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a href="#home-karya.html" class="nav-link" type="button">
+                            <a id="home-karya" href="/karya/home-karya.html" class="nav-link" type="button">
                               Karya
                             </a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -161,17 +160,17 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="/assets/karya/tools/index-tools.html">Alat</a>
+                                    <a id="karya-alat" class="dropdown-item" href="/karya/tools/index-tools.html">Alat</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/assets/karya/games/index-games.html">Games</a>
+                                    <a id="karya-games" class="dropdown-item" href="/karya/games/index-games.html">Games</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a class="nav-link active" href="/assets/artikel/home-artikel.html">
+                            <a id="home-artikel" class="nav-link" href="/artikel/home-artikel.html">
                           Artikel
                       </a>
                         </div>
@@ -204,11 +203,11 @@
     <!-- End Navbar-->
 
     <!-- Content -->
-    <section class="cmain">
+    <section class="main-tutorial">
         <article class="container">
             <header>
                 <div class="row d-flex">
-                    <h1 class="col-md-7">Judul Artikel</h1>
+                    <h1 class="col-md-7">Judul tutorial</h1>
                     <div class="col-md-3 offset-md-1">
                         <!-- Breadcumbs / Path File -->
                         <nav aria-label="breadcrumb">
@@ -256,11 +255,11 @@
                 </div>
                 <div class="bgborder border border-light shadow col-xl-3 offset-xl-1">
                     <ul>
-                        <h5 align="center">Artikel Terkait</h5>
-                        <li><a href="#">Artikel A</a></li>
-                        <li><a href="#">Artikel B</a></li>
-                        <li><a href="#">Artikel C</a></li>
-                        <li><a href="#">Artikel D</a></li>
+                        <h5 align="center">tutorial Terkait</h5>
+                        <li><a href="#">tutorial A</a></li>
+                        <li><a href="#">tutorial B</a></li>
+                        <li><a href="#">tutorial C</a></li>
+                        <li><a href="#">tutorial D</a></li>
                         <li><a href="#">dst</a></li>
                         <li><a href="#">...</a></li>
                     </ul>

@@ -119,3 +119,31 @@ $('input[name=checkbox]').change(function() {
         $('.breadcrumb-item.active').css("color", "#757575");
     }
 });
+
+/* update link navbar */
+function updateNavbar() {
+    $('#text-icon').attr("href", "/index.html");
+    $('#home-tutorial').attr("href", "/tutorial/home-tutorial.html");
+    $('#home-tantangan').attr("href", "/tantangan/home-tantangan.html");
+    $('#tantangan-c').attr("href", "#");
+    $('#tantangan-c++').attr("href", "#");
+    $('#tantangan-java').attr("href", "#");
+    $('#tantangan-python').attr("href", "#");
+    $('#tantangan-website').attr("href", "#");
+    $('#tantangan-html').attr("href", "#");
+    $('#tantangan-css').attr("href", "#");
+    $('#tantangan-javascript').attr("href", "#");
+    $('#home-belajar').attr("href", "/belajar/home-belajar.html");
+    $('#belajarc').attr("href", "/belajar/c/pengenalan-c.html");
+    $('#belajar-c++').attr("href", "/belajar/c++/pengenalan-c++.html");
+    $('#belajar-java').attr("href", "#");
+    $('#belajar-python').attr("href", "#");
+    $('#belajar-website').attr("href", "#");
+    $('#belajar-html').attr("href", "#");
+    $('#belajar-css').attr("href", "#");
+    $('#belajar-javascript').attr("href", "#");
+}
+
+$(document).ready(function() {
+    updateNavbar();
+});

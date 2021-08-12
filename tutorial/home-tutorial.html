@@ -8,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
     <!-- Link Font-Style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@600&display=swap&effect=anaglyph" rel="stylesheet">
@@ -23,10 +22,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Link Custom Css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/home-tutorial.css" />
 
     <!-- Link Icon -->
-    <link rel="icon" type="image/ico" href="./assets/img/logo_icon.ico">
+    <link rel="icon" type="image/ico" href="/assets/img/logo_icon.ico" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKN58Z4GL5"></script>
@@ -40,7 +40,6 @@
 
         gtag('config', 'G-GKN58Z4GL5');
     </script>
-
     <title>Programming Nusantara</title>
 </head>
 
@@ -59,7 +58,7 @@
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll multi-level" role="menu" style="--bs-scroll-height: 100px;">
                     <li class="nav-item dropdown">
                         <div class="d-flex align-content-center flex-wrap a-grup">
-                            <a id="home-tutorial" href="/tutorial/home-tutorial.html" class="nav-link" type="button">
+                            <a id="home-tutorial" href="/tutorial/home-tutorial.html" class="nav-link active" type="button">
                               Tutorial
                             </a>
                         </div>
@@ -205,11 +204,206 @@
     <!-- End Navbar-->
 
     <!-- Content -->
-    <section id="cover">
-        <div class="cover bg-image d-flex justify-content-center align-items-center">
-            <div class="mask">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <h1 class="text-center code">Coders;<br><span class="txt-rotate" data-period="1000" data-rotate='[ "Selamat Datang di PN!", "Selamat Belajar!", "Selamat Ngoding!", "Nikmati Kebebasan!" ]'></span><br><i class="far fa-smile"></i></h1>
+    <section class="home-tutorial">
+        <div class="container">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Tutorial Bahasa C
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Tutorial Bahasa C++
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Tutorial Bahasa Java
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Tutorial Bahasa Python
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Tutorial Bahasa Ruby
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Tutorial HTML
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Tutorial CSS
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            Tutorial Javascript
+                    </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                            Tutorial Lainnya
+                    </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">Cara membuat segitiga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -218,148 +412,12 @@
 
     <!-- Footer -->
     <footer class="text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <!-- Twitter -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
-
-                <!-- Google -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button">
-                    <i class="fab fa-google"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- Linkedin -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <!-- Github -->
-                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button">
-                    <i class="fab fa-github"></i>
-                </a>
-            </section>
-            <!-- End Section: Social media -->
-
-            <!-- Section: Form -->
-            <section class="">
-                <!-- Form -->
-                <form action="assets/php/insert.php" method="POST">
-                    <!--Grid row-->
-                    <div class="row d-flex justify-content-center">
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Daftarkan e-mail untuk mendapat pemberitahuan</strong>
-                            </p>
-                        </div>
-                        <!-- End Grid column-->
-                        <!-- Input -->
-                        <!--Grid column-->
-                        <div class="col-md-5 col-12">
-                            <!-- Email input -->
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" name="email" class="form-control" required>
-                                <label class="form-label" for="form5Example2">Email address</label>
-                            </div>
-                        </div>
-                        <!-- End Grid column-->
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <!-- Submit button -->
-                            <input type="submit" name="submitmailonly" value="Submit" placeholder="Submit" class="btn btn-outline-light mb-4">
-                        </div>
-                        <!--End Grid column-->
-                        <!-- End Input -->
-                    </div>
-                    <!--End Grid row-->
-                </form>
-                <!-- End Form -->
-            </section>
-            <!-- End Section: Form -->
-
-            <!-- Section: Text -->
-            <section class="mb-4">
-                <p>
-                    Programming Nusantara atau PROGUSA adalah salah satu website belajar bahasa pemrograman di Indonesia. PROGUSA melakukan pembelajaran dari dasar hingga menjadi profesional. PROGUSA memberikan materi-materi dalam bentuk text maupun video yang bisa di akses
-                    secara gratis oleh semua kalangan umat manusia di alam semesta ini.
-                </p>
-            </section>
-            <!-- End Section: Text -->
-
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Tentang Kami</a></h5>
-                    </div>
-                    <!--End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Ketentuan Penggunaan</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Kebijakan Pribadi</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase text-center"><a class="text-white" href="#">Kontak</a></h5>
-                    </div>
-                    <!-- End Grid column-->
-
-                    <!--Grid column-->
-                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <!-- End Grid column-->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- End Section: Links -->
-        </div>
-        <!-- End Grid container -->
-    </footer>
-    <!-- Copyright -->
-    <footer class="text-white">
         <!-- Copyright -->
         <div class="cc text-center p-3">
             © 2021 Semua Hak Cipta Dilindungi
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Copyright -->
     <!-- End Footer -->
 
     <!-- Script Wajib (Jangan di ganti)-->
@@ -382,7 +440,10 @@
     <!-- End Script Wajib -->
 
     <!-- Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <script src="/assets/javascript/kode.js"></script>
+    <script src="/assets/javascript/truncate-text.js"></script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
