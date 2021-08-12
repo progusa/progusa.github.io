@@ -22,11 +22,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Link Highlight Js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
 
     <!-- Link Custom Css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -265,18 +261,22 @@
                 <h4><b>Contoh :</b></h4>
             </div>
             <div class="code">
-                <pre><code id="target-copy" class="language-c">#include&lt;stdio.h&gt
-
+                <!-- Please write exact structures code -->
+                <pre><code id="target-copy" class="language-c">/*== This is Header ==*/
+#include&lt;stdio.h&gt
+//comment like this
+/*Body C*/
 int main(){
     printf("Hello, World!");
     return 0;
 }</code></pre>
+                <!-- Don't give space in the end of code pre -->
             </div>
-            <div id="succes-copy" class="alert alert-success">
+            <div id="succes-copy" class="alert alert-success copy">
                 Succes Copy Text!
             </div>
             <div class="copy-btn d-flex justify-content-center mb-3">
-                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard" onclick="copyToClipboard('#target-copy')">Copy</button>
+                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to Clipboard" onclick="copyToClipboard('#target-copy', 'succes-copy')">Copy</button>
             </div>
         </div>
         <!-- End Code Example -->
@@ -317,7 +317,10 @@ int main(){
     <!-- Custom Script -->
     <script src="/assets/javascript/kode.js"></script>
     <script src="/assets/javascript/sidebar.js"></script>
-    <script src="/assets/javascript/get-api.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>

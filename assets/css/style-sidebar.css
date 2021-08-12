@@ -18,6 +18,7 @@ Spanish Green
     position: fixed;
     height: calc(100% - 58px);
     overflow: auto;
+    color: black;
 }
 
 .sidebar a {
