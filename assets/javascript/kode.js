@@ -122,6 +122,7 @@ $('input[name=checkbox]').change(function() {
 
 /* update link navbar */
 function updateNavbar() {
+    console.log("masuk");
     $('#text-icon').attr("href", "/index.html");
     $('#home-tutorial').attr("href", "/tutorial/home-tutorial.html");
     $('#home-tantangan').attr("href", "/tantangan/home-tantangan.html");
@@ -135,7 +136,7 @@ function updateNavbar() {
     $('#tantangan-javascript').attr("href", "#");
     $('#home-belajar').attr("href", "/belajar/home-belajar.html");
     $('#belajarc').attr("href", "/belajar/c/pengenalan-c.html");
-    $('#belajar-c++').attr("href", "/belajar/c++/pengenalan-c++.html");
+    $('#belajar-cpp').attr("href", "/belajar/c++/pengenalan-c++.html");
     $('#belajar-java').attr("href", "#");
     $('#belajar-python').attr("href", "#");
     $('#belajar-website').attr("href", "#");
